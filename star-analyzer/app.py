@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import random
-
+import os
 # Load the CSV file into a DataFrame
 df = pd.read_csv('star_dataset.csv')
 
