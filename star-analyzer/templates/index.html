@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Dataset Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Star Dataset Analyzer</h1>
+
+        <form id="star-form">
+            <select id="star-type" name="star_type">
+                <option value="">--Select Star Type--</option>
+                <option value="0">Brown Dwarf</option>
+                <option value="1">Red Dwarf</option>
+                <option value="2">White Dwarf</option>
+                <option value="3">Main Sequence</option>
+                <option value="4">Supergiant</option>
+                <option value="5">Hypergiant</option>
+            </select>
+
+            <button type="button" onclick="fetchStarDetails()">View Star Details</button>
+
+        </form>
+
+        <h2>Star Details</h2>
+        <div id="star-details">
+            <!-- Star details will be displayed here -->
+        </div>
+
+       
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
